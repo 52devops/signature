@@ -11,3 +11,5 @@
     他默认每一个用户有且仅有一套权限配置, 所以直接将 app_id = app_key , 然后外加一个app_secret就够了. 
 * 省去app_id和 app_key
     相当于 app_id = app_key = app_secret,  通常用于开放性接口的地方, 特别是很多地图类api 都采用这种模式, 这种模式下, 带上app_id 的目的仅仅是统计 某一个用户调用接口的次数而已了.
+## 本案例的使用方法
+参考app1/views.py中get_app方法，通过使用@Signer()的方式使用即可，方便简单
